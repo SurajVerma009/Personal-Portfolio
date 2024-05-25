@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Intersection Observer for pop-up effect
     const observerOptions = {
-        threshold: 0.2
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver((entries) => {
