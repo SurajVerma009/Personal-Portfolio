@@ -509,7 +509,7 @@ h2#contact{
 
 @media screen and (max-width:367px) {
     h2 {
-        font-size: 2em;
+        font-size: 1em;
         text-align: center;
     }
     .projectInfo{
