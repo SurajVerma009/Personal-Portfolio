@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#titleContainer {
+    width: 100%;
+    max-width: 500px;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcomeText {
+    height: 1.3em;
+    border-right: 5px solid #ffffff;
+    letter-spacing: 2px;
+}
+
+#welcomeText,
+#explore {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 6em;
+    color: #ff02ffb3;
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
+}
+
+#explore {
+    width: 250px;
+    height: 70px;
+    margin-right: 1em;
+    text-align: center;
+    padding-top: 1.2em;
+    border-left: 2px solid #ff3cac;
+    border-right: 2px solid #ff3cac;
+    border-top: 2px solid #562b7c;
+    border-bottom: 2px solid #2b86c5;
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+
+#explore>span {
+    margin-right: 0.4em;
+}
+
+span>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#explore>i {
+    animation: move 1s ease-in-out infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(4px);
+    }
+}
+
+#mainContainer {
+    width: 96%;
+    max-width: 1280px;
+    min-height: 300vh;
+    background-color: rgba(32, 48, 79, 0.403);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 90vh;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#infoBox {
+    width: 100%;
+    max-width: 360px;
+    min-height: 320px;
+}
+
+p#someText {
+    font-size: 1.5em;
+    word-spacing: 0.2em;
+    color: #ff3cac;
+    margin-left: 0.4em;
+}
+
+h2 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+#linkBox {
+    display: flex;
+    margin-bottom: 3em;
+}
+
+#linkBox>div {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 1em;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#linkdln {
+    margin-right: 1em;
+}
+
+
+#resume {
+    width: 180px;
+    height: 50px;
+    border-left: 2px solid #ff3cac;
+    border-right: 2px solid #ff3cac;
+    border-top: 2px solid #562b7c;
+    border-bottom: 2px solid #2b86c5;
+    border-radius: 5px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 1em;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#resume>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#imageBox {
+    width: 100%;
+    max-width: 350px;
+    height: 330px;
+    border-radius: 100%;
+    overflow: hidden;
+    border-left: 10px solid #ff3cac;
+    border-right: 10px solid #ff3cac;
+    border-top: 10px solid #562b7c;
+    border-bottom: 10px solid #2b86c5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: UpandDown 2s linear infinite;
+}
+
+
+#imageBox img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-position: center;
+    object-fit: contain;
+    margin-top: -3em;
+}
+
+img#image2 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-position: center;
+    object-fit: contain;
+    margin-top: 2px;
+    border: 1px solid #000;
+}
+
+
+#aboutBox {
+    width: 100%;
+    max-width: 700px;
+    min-height: 400px;
+}
+
+h2#about {
+    font-size: 3em;
+    color: rgb(187 134 252)
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+span.fd {
+    display: inline-block;
+    margin-top: 0.4em;
+}
+
+p#text {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-top: 0.9em;
+}
+
+.colorful {
+    font-size: 1.4em;
+    color: rgb(187 134 252)
+}
+
+.last {
+    text-align: end;
+}
+
+.skillContainer {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 90vh;
+    margin-top: 3em;
+}
+
+#skillInfo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2#skill {
+    text-align: center;
+    font-size: 3em;
+}
+
+#skillBox {
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px;
+}
+
+#skillBox>p {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#skillBox>div {
+    width: 100%;
+}
+
+.imageContainer img {
+    width: 60px;
+    height: 60px;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+img[alt="Github"] {
+    background-color: #ffffff;
+}
+
+.projectContainer {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 90vh;
+    margin-top: 2em;
+}
+
+h2#project {
+    text-align: center;
+    font-size: 3em;
+}
+
+.projectBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectInfo {
+    width: 100%;
+    max-width: 386px;
+    min-height: 480px;
+    margin-left: 0.7em;
+    display: flex;
+    flex-direction: column;
+    background-color: #093759;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.nameBox {
+    width: 100%;
+    max-width: 386px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nameBox>p{
+    width: 200px;
+    font-size: 1.5em;
+    margin-left: 0.4em;
+}
+
+.nameBox>a img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+p.summary{
+    font-size: 1.2em;
+    line-height: 2;
+    padding-left: 0.4em;
+}
+
+.projectInfo >img {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.projectInfo >img:hover{
+    transform: scaleY(1.1);
+}
+
+.contactContainer{
+    width: 100%;
+    max-width: 1200px;
+    min-height: 80vh;
+    margin-top: 4em;
+    padding-top: 4em;
+}
+
+h2#contact{
+    text-align: center;
+    color: rgb(187 134 252)
+}
+
+#contactBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactBox>div{
+    background-color: #000000;
+    width: 100%;
+    max-width: 360px;
+    min-height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+
+}
+
+.list>p,.list>i{
+    margin-left: 1em;
+}
+
+#author{
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#authorName{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.popup {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.popup-visible {
+    opacity: 1;
+    animation: fadeInUp 0.6s forwards;
+}
+
+
+
+@keyframes UpandDown {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:1233px) {
+    .projectInfo {
+        margin-top: 0.5em;
+    }
+}
+
+@media screen and (max-width:887px) {
+    #skillInfo {
+        justify-content: center;
+    }
+
+    #skillBox {
+        margin-bottom: 1em;
+    }
+
+    #skillBox>p {
+        text-align: center;
+    }
+
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:413px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width:741px) {
+    .Container {
+        justify-content: center;
+    }
+
+    p#someText {
+        text-align: center;
+    }
+
+    #linkBox {
+        justify-content: center;
+    }
+
+    #resume {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:1095px) {
+    .Container:nth-child(2) {
+        justify-content: center;
+    }
+
+    h2#about {
+        margin-top: 0.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:827px) {
+    .projectBox{
+        justify-content: center;
+    }
+    .projectInfo{
+        margin-bottom: 0.7em;
+    }
+}
+
+
+@media screen and (max-width:367px) {
+    h2 {
+        font-size: 3em;
+        text-align: center;
+    }
+    .projectInfo{
+        margin-left: 0;
+    }
+}
