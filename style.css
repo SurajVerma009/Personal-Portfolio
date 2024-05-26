@@ -499,4 +499,7 @@ h2#contact {
     h2#name{
         font-size: 3em;
     }
+    .projectInfo {
+        margin-bottom: 1em;
+    }
 }
