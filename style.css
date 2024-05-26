@@ -18,7 +18,7 @@ body {
 #titleContainer {
     width: 100%;
     max-width: 500px;
-    min-height: 95vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,11 +50,11 @@ h1 {
     height: 70px;
     margin-right: 1em;
     text-align: center;
-    padding-top: 1.2em;
-    border-left: 2px solid #ff3cac;
-    border-right: 2px solid #ff3cac;
-    border-top: 2px solid #562b7c;
-    border-bottom: 2px solid #2b86c5;
+    padding-top: 1em;
+    border-left: 5px solid #ff3cac;
+    border-right: 5px solid #ff3cac;
+    border-top: 5px solid #562b7c;
+    border-bottom: 5px solid #2b86c5;
     border-radius: 20px;
     letter-spacing: 2px;
 }
@@ -63,7 +63,7 @@ h1 {
     margin-right: 0.4em;
 }
 
-span>a{
+span>a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -96,7 +96,7 @@ span>a{
 .Container {
     width: 100%;
     max-width: 1200px;
-    min-height: 90vh;
+    min-height: 70vh;
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -107,7 +107,8 @@ span>a{
 #infoBox {
     width: 100%;
     max-width: 360px;
-    min-height: 320px;
+    min-height: 350px;
+    margin-bottom: 1em;
 }
 
 p#someText {
@@ -146,20 +147,19 @@ h2 {
 #resume {
     width: 180px;
     height: 50px;
-    border-left: 2px solid #ff3cac;
-    border-right: 2px solid #ff3cac;
-    border-top: 2px solid #562b7c;
-    border-bottom: 2px solid #2b86c5;
+    border-left: 5px solid #ff3cac;
+    border-right: 5px solid #ff3cac;
+    border-top: 5px solid #562b7c;
+    border-bottom: 5px solid #2b86c5;
     border-radius: 5px;
-    font-weight: 800;
     text-align: center;
     letter-spacing: 1px;
-    padding-top: 1em;
+    padding-top: 0.6em;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#resume>a{
+#resume>a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -176,6 +176,8 @@ h2 {
     border-bottom: 10px solid #2b86c5;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation: UpandDown 2s linear infinite;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 
@@ -195,14 +197,14 @@ img#image2 {
     object-position: center;
     object-fit: contain;
     margin-top: 2px;
-    border: 1px solid #000;
 }
 
 
 #aboutBox {
     width: 100%;
-    max-width: 700px;
+    max-width: 450px;
     min-height: 400px;
+    margin-top: 1em;
 }
 
 h2#about {
@@ -211,7 +213,7 @@ h2#about {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 span.fd {
@@ -220,7 +222,7 @@ span.fd {
 }
 
 p#text {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.5;
     margin-top: 0.9em;
 }
@@ -319,7 +321,8 @@ h2#project {
     justify-content: space-between;
     align-items: center;
 }
-.nameBox>p{
+
+.nameBox>p {
     width: 200px;
     font-size: 1.5em;
     margin-left: 0.4em;
@@ -331,13 +334,13 @@ h2#project {
     cursor: pointer;
 }
 
-p.summary{
+p.summary {
     font-size: 1.2em;
     line-height: 2;
     padding-left: 0.4em;
 }
 
-.projectInfo >img {
+.projectInfo>img {
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -345,11 +348,11 @@ p.summary{
     transition: all 0.5s linear;
 }
 
-.projectInfo >img:hover{
+.projectInfo>img:hover {
     transform: scaleY(1.1);
 }
 
-.contactContainer{
+.contactContainer {
     width: 100%;
     max-width: 1200px;
     min-height: 80vh;
@@ -357,18 +360,18 @@ p.summary{
     padding-top: 4em;
 }
 
-h2#contact{
+h2#contact {
     text-align: center;
     color: rgb(187 134 252)
 }
 
-#contactBox{
+#contactBox {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#contactBox>div{
+#contactBox>div {
     background-color: #000000;
     width: 100%;
     max-width: 360px;
@@ -380,11 +383,12 @@ h2#contact{
 
 }
 
-.list>p,.list>i{
+.list>p,
+.list>i {
     margin-left: 1em;
 }
 
-#author{
+#author {
     width: 100%;
     min-height: 15vh;
     display: flex;
@@ -392,7 +396,7 @@ h2#contact{
     justify-content: center;
 }
 
-#authorName{
+#authorName {
     font-size: 1.5em;
     font-weight: 900;
 }
@@ -404,6 +408,7 @@ h2#contact{
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -423,96 +428,75 @@ h2#contact{
 
 
 @keyframes UpandDown {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(10px);
     }
-    75%{
+
+    75% {
         transform: translateY(-10px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
-@media screen and (max-width:1233px) {
-    .projectInfo {
-        margin-top: 0.5em;
-    }
-}
 
-@media screen and (max-width:887px) {
-    #skillInfo {
-        justify-content: center;
-    }
-
-    #skillBox {
-        margin-bottom: 1em;
-    }
-
-    #skillBox>p {
-        text-align: center;
-    }
-
-    .imageContainer {
+@media screen and (max-width:897px) {
+    .aboutContainer{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
     }
 }
 
-@media screen and (max-width:413px) {
-    h1 {
-        font-size: 4em;
-    }
-}
-
-@media screen and (max-width:741px) {
+@media screen and (max-width:806px) {
     .Container {
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     p#someText {
-        text-align: center;
-    }
-
-    #linkBox {
-        justify-content: center;
-    }
-
-    #resume {
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width:1095px) {
-    .Container:nth-child(2) {
-        justify-content: center;
-    }
-
-    h2#about {
-        margin-top: 0.5em;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width:827px) {
-    .projectBox{
-        justify-content: center;
-    }
-    .projectInfo{
-        margin-bottom: 0.7em;
-    }
-}
-
-
-@media screen and (max-width:367px) {
-    h2 {
-        font-size: 1em;
-        text-align: center;
-    }
-    .projectInfo{
         margin-left: 0;
+    }
+
+    #infoBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2#about {
+        text-align: center;
+    }
+    #skillInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+    #skillBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #skillBox>div {
+       display: flex;
+       justify-content: center;
+    }
+}
+
+@media screen and (max-width:415px) {
+    h1{
+        font-size: 4em;
+    }
+    #welcomeText{
+        font-size: 0.8em;
+    }
+    #explore {
+        margin-right: 0;
+    }
+    h2#name{
+        font-size: 3em;
     }
 }
