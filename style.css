@@ -387,6 +387,10 @@ h2#contact {
 .list>i {
     margin-left: 1em;
 }
+.gmail a{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 #author {
     width: 100%;
